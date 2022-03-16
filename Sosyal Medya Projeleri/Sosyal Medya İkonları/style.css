@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins",sans-serif;
+    background-color: #edf1fd;
+}
+
+.icons{
+    position: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 99;
+}
+.icons .icon-box{
+    position: relative;
+    width: 170px;
+    display: block;
+    margin: 7px 0;
+    padding: 12px 20px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    left: -115px;
+    transition: all .4s;
+    text-decoration: none;
+}
+.icons .icon-box span{
+    font-size: 15px;
+    float: left;
+    font-weight: 500;
+    color: #fff;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.38);
+}
+.icons .icon-box i{
+    font-size: 22px;
+    float: right;
+    padding-left: 17px;
+    color: #fff;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.38);
+}
+.icons .icon-box.youtube{
+    background-color: #FF0000;
+}
+.icons .icon-box.discord{
+    background-color: #7289DA;
+}
+.icons .icon-box.twitter{
+    background-color: #1DA1F2;
+}
+.icons .icon-box.spotify{
+    background-color: #1DB954;
+}
+.icons .icon-box:hover{
+    left: 0;
+    text-decoration: none;
+}
